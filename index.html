@@ -6,12 +6,26 @@
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1.0">
 		<title>last.fm shared artists</title>
 		<link href="main.css" rel="stylesheet">
+		<script>
+		function subm(){
+				var u1=document.getElementById("user1").value;
+				var u2=document.getElementById("user2").value;
+				document.getElementById("test").value = u1;
+			}
+		</script>
 	</head>
 	<body>
-		<form action="action_page.php" method="get">
-			Username 1: <input type="text" name="user1">
-			Username 2: <input type="text" name="user2">
-			<input type="submit" value="Submit">
-		</form> 
+		<form method="get">
+			Username 1: <input id=user1 type="text">
+			Username 2: <input id=user2 type="text">
+			<div class="bar">
+				<a href="#">
+				<div class="horiz" style="background-image:url('submit.png')" onclick="subm()">
+					<p>submit</p>
+				</div>
+				</a>
+			</div>
+		</form>
+		<p id=test>hi</p>
 	</body>
 </html>
