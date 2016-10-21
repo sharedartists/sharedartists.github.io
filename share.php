@@ -8,7 +8,7 @@
 		<link href="main.css" rel="stylesheet">
 	</head>
 	<body>
-	<form action="share.php" method="get">
+	<form action="./share.php" method="get">
 			Username 1: <input type="text" name="user1">
 			Username 2: <input type="text" name="user2">
 			<input type="submit" value="Submit">
