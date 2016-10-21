@@ -8,10 +8,13 @@
 		<link href="main.css" rel="stylesheet">
 	</head>
 	<body>
-		<form action="share.php" method="get">
+	<form action="share.php" method="get">
 			Username 1: <input type="text" name="user1">
 			Username 2: <input type="text" name="user2">
 			<input type="submit" value="Submit">
-			</form> 
+		</form> 
+		user 1: <?php echo $_GET["user1"]; ?><br>
+		user 2: <?php echo $_GET["user2"]; ?>
+
 	</body>
-</html>
+</html> 
